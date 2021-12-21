@@ -5,4 +5,4 @@ def uppercase(str):
         if st >= 97 and st <= 122:
             st = st - 32
         print("{:c}".format(st), end="")
-    print(" ")
+    print("")
