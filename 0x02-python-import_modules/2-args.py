@@ -7,7 +7,10 @@ def main():
     if largo == 1:
         print("0 arguments.")
     else:
-        print("{} arguments:".format(largo))
+        if largo == 2:
+            print("{} argument:".format(largo - 1))
+        else:
+            print("{} arguments:".format(largo - 1))
         for i in range(1, largo):
             print("{}: {}".format(i, sys.argv[i]))
 
