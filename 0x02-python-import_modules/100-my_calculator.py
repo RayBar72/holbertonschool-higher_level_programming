@@ -12,7 +12,8 @@ def main():
     b = int(argv[3])
     op = argv[2]
     if op in opera:
-        print("{} {} {} = {}".format(argv[1], argv[2], argv[3], opera[op](a, b)))
+        print("{} {} {} = {}".format(argv[1],
+                                     argv[2], argv[3], opera[op](a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
