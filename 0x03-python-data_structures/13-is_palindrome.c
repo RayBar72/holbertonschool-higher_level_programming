@@ -30,15 +30,20 @@ listint_t *reverse_list(listint_t **head)
 
 int is_palindrome(listint_t **head)
 {
+	listint_t *orig = *head, *rev = *head;
 
-	listint_t *orig = *head, *rev = NULL;
-
-	if (!*head)
+	if (*head == NULL)
 		return (1);
-	rev = reverse_list(&orig);
+	while (orig->next && orig->next->next)
+	{
+		rev = rev->next;
+	        orig = orig->next->next;
+	}
+	rev = reverse_list(&rev);
+	orig = *head;
 	while (orig && rev)
 	{
-		if (orig->n != rev->n)
+		if (rev->n != orig->n)
 			return (0);
 		orig = orig->next;
 		rev = rev->next;
