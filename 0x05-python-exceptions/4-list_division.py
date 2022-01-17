@@ -12,4 +12,4 @@ def list_division(list_1, list_2, list_length):
     except IndexError:
         print("out of range")
     finally:
-return result
+        return result
