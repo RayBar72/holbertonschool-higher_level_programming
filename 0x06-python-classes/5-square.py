@@ -4,9 +4,6 @@
 """"Class Square that defines a square """
 
 
-from ipaddress import v4_int_to_packed
-
-
 class Square:
 
     """Defines class Square"""
