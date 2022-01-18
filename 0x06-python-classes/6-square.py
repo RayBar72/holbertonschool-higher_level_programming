@@ -38,7 +38,7 @@ class Square:
 
         """Sets size
             Args:
-            value: value of Square
+                value: value of Square
         """
 
         if type(value) == int:
@@ -54,7 +54,7 @@ class Square:
 
         """Sets size
             Args:
-            value: value of Square
+                value: value of Square
         """
 
         if (type(value) != tuple or len(value) != 2 or type(value[0]) != int
