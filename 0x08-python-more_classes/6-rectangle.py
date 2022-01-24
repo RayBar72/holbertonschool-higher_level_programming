@@ -28,13 +28,13 @@ class Rectangle:
         return self.__width
 
     @width.setter
-    def width(self, width):
+    def width(self, value):
         """Property to se width"""
-        if type(width) != int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
-        if width <= 0:
-            raise TypeError("width must be >= 0")
-        self.__width = width
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
@@ -42,13 +42,13 @@ class Rectangle:
         return self.__height
 
     @height.setter
-    def height(self, height):
+    def height(self, value):
         """Property to se height"""
-        if type(height) != int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
-        if height <= 0:
-            raise TypeError("height must be >= 0")
-        self.__height = height
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
         """Function that returns the area of a rectangle"""
@@ -77,10 +77,7 @@ class Rectangle:
 
     def __repr__(self):
         """repr method to retur a rectangle made with char '#'"""
-        a = str(self.__width)
-        b = str(self.__height)
-        c = "Rectangle(" + a + "," + b + ")"
-        return c
+        return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
         """Printing menssage when deleting"""
