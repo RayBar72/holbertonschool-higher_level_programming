@@ -74,7 +74,4 @@ class Rectangle:
 
     def __repr__(self):
         """repr method to retur a rectangle made with char '#'"""
-        a = str(self.__width)
-        b = str(self.__height)
-        c = "Rectangle(" + a + "," + b + ")"
-        return c
+        return "Rectangle({}, {})".format(self.width, self.height)
