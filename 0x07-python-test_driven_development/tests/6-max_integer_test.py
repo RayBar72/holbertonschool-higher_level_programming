@@ -28,9 +28,13 @@ class TestMaxInteger(unittest.TestCase):
         """Test functio max at beginning"""
         self.assertEqual(max_integer([11, 1, 2, 3, 10]), 11)
 
+    def test_max_at_middle(self):
+        """Test functio max at beginning"""
+        self.assertEqual(max_integer([10, 11, 10]), 11)
+
     def test_one_element(self):
         """Test functio max at beginning"""
-        self.assertEqual(max_integer([11]), 11)
+        self.assertEqual(max_integer([1]), 1)
 
 
 if __name__ == '__main__':
