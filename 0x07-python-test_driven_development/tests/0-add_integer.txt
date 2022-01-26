@@ -85,3 +85,7 @@ Fuera de la familia:
     Traceback (most recent call last):
         ...
     ValueError: cannot convert float NaN to integer
+
+One imput:
+    >>> add_integer(2)
+    100
