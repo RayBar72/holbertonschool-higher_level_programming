@@ -60,3 +60,8 @@ No inputs:
     Traceback (most recent call last):
         ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Al infinito y más allá:
+    >>> matrix = [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]]
+    >>> print(matrix_divided(matrix, float('inf')))
+    [[0.0, 0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0]]
