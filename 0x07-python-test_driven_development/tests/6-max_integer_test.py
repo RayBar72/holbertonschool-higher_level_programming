@@ -24,6 +24,14 @@ class TestMaxInteger(unittest.TestCase):
         """Test for one only number"""
         self.assertEqual(max_integer([0]), 0)
 
+    def test_max_at_beginning(self):
+        """Test functio max at beginning"""
+        self.assertEqual(max_integer([11, 1, 2, 3, 10]), 11)
+
+    def test_one_element(self):
+        """Test functio max at beginning"""
+        self.assertEqual(max_integer([11]), 11)
+
 
 if __name__ == '__main__':
     unittest.main()
