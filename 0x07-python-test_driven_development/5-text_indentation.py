@@ -22,7 +22,7 @@ def text_indentation(text):
     for i in range(len(temp)):
         if temp[i] == ":" or temp[i] == "?" or temp[i] == ".":
             new.append(text[a:i - 1])
-            a = i
+            a = i - 1
             i = i + 1
         else:
             i = i + 1
