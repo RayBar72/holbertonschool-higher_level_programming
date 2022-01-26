@@ -31,10 +31,6 @@ Size less than zero:
         ...
     ValueError: size must be >= 0
 
-Size zero:
-    >>> print_square(0)
-    <BLANKLINE>
-
 No input:
     >>> print_square()
     Traceback (most recent call last):

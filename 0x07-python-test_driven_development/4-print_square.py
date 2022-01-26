@@ -16,7 +16,7 @@ def print_square(size):
         raise ValueError("size must be >= 0")
     i = 0
     if size == 0:
-        print()
+        return None
     else:
         while i < size:
             print("#" * size)
