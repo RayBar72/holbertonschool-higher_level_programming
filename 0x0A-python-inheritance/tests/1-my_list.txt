@@ -2,7 +2,7 @@
 1-my_list
 ==========
 
-Importing class:
+Importing class
 	>>> MyList = __import__('1-my_list').MyList
 
 Basic scenary (pos, neg, zero):
@@ -30,3 +30,29 @@ Long int:
 Lon int Sorted:
 	>>> my_list.print_sorted()
 	[-1, 0, 1, 999999999999]
+
+All equals:
+	>>> my_list = MyList()
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.print_sorted()
+	[8, 8, 8, 8]
+
+Passed an argumento to print_sorted:
+	>>> my_list = MyList()
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.append(8)
+	>>> my_list.print_sorted(10)
+	Traceback (most recent call last):
+		...
+	TypeError: print_sorted() takes 1 positional argument but 2 were given
+
+Empty lis:
+	>>> my_list = MyList()
+	>>> my_list.print_sorted()
+	[]
+
