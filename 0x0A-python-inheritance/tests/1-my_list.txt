@@ -56,3 +56,26 @@ Empty lis:
 	>>> my_list.print_sorted()
 	[]
 
+All zero:
+	>>> my_list = MyList()
+	>>> my_list.append(0)
+	>>> my_list.append(0)
+	>>> my_list.append(0)
+	>>> my_list.append(0)
+	>>> my_list.print_sorted()
+	[0, 0, 0, 0]
+
+All neg:
+	>>> my_list = MyList()
+	>>> my_list.append(-10)
+	>>> my_list.append(-11)
+	>>> my_list.append(-12)
+	>>> my_list.append(-13)
+	>>> my_list.print_sorted()
+	[-13, -12, -11, -10]
+
+Appendign pos:
+	>>> my_list.append(10)
+	>>> my_list.append(11)
+	>>> my_list.print_sorted()
+	[-13, -12, -11, -10, 10, 11]
