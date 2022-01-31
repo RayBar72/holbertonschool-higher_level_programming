@@ -60,3 +60,27 @@ Function integer_validator case no parameters:
     Traceback (most recent call last):
         ...
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Function integer_validator case one parameter:
+    >>> bg.integer_validator("raymundo")
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Function integer_validator case three parameters:
+    >>> bg.integer_validator("raymundo", 5, 10)
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+Checks type 'class'
+    >>> bg = BaseGeometry()
+    >>> type(bg)
+    <class '7-base_geometry.BaseGeometry'>
+
+Function integer_validator case bool:
+    >>> bg.integer_validator("raymundo", True)
+    Traceback (most recent call last):
+        ...
+    TypeError: raymundo must be an integer
+
