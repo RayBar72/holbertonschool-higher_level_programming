@@ -32,9 +32,9 @@ class Student:
                     retorno[x] = self.__dict__[x]
             return retorno
 
-        def reload_from_json(self, json):
-            """
-            Function that replaces all attributes of the Student
-            """
-            for items in json.keys():
-                self.__dict__[items] = json[items]
+    def reload_from_json(self, json):
+        """
+        Function that replaces all attributes of the Student
+        """
+        for items in json.keys():
+            self.__dict__[items] = json[items]
