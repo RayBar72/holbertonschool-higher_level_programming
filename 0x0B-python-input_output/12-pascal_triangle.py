@@ -8,7 +8,7 @@ def pascal_triangle(n):
     """
     Fuction that returns a list of list of ints
     """
-    pascal = [[]]
+    pascal = []
     if n <= 0:
         return pascal
     i = 0
