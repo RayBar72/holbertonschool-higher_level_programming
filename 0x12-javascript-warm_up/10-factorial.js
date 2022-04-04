@@ -1,8 +1,11 @@
 #!/usr/bin/node
 
-const x = parseInt(process.argv[2]);
-let y = 1;
-for (let i = 1; i <= x; i++) {
-  y *= i;
+function factorial (n) {
+  n = parseInt(n);
+  if (!n || n < 2) {
+    return 1;
+  } else {
+    return n * (factorial(n - 1));
+  }
 }
-console.log(y);
+console.log(factorial(process.argv[2]));
