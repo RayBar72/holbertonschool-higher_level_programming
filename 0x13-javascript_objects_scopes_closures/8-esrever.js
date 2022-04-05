@@ -3,7 +3,7 @@
 exports.esrever = function (list) {
   const nuevo = [];
   let largo = list.length;
-  while (--largo) {
+  while (largo--) {
     nuevo.push(list[largo]);
   }
   return nuevo;
