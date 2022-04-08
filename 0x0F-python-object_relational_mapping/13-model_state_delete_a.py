@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that lists all State objects from the database hbtn_0e_6_usa"""
+"""Script that changes the name of a state in hbtn_0e_6_usa"""
 
 
 if __name__ == '__main__':
@@ -15,9 +15,10 @@ if __name__ == '__main__':
     Session = sessionmaker(engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id).all()
-
+    states = session.query(State).filter(State.name.like('%a%'))
     for state in states:
-        print("{}: {}".format(state.id, state.name))
+        session.delete(state)
+
+    session.commit()
 
     session.close()
