@@ -18,7 +18,7 @@ if __name__ == '__main__':
     states = session.query(State).order_by(State.id).all()
 
     for state in states:
-        if state.name.find("a") or state.name.find("A") >= 1:
+        if state.name.find("a") >= 1:
             print("{}: {}".format(state.id, state.name))
 
     session.close()
