@@ -15,10 +15,9 @@ if __name__ == '__main__':
     Session = sessionmaker(engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id).all()
+    states = session.query(State).filter(State.name.like('%a%'))
 
     for state in states:
-        if state.name.find("a") >= 1:
-            print("{}: {}".format(state.id, state.name))
+        print("{}: {}".format(state.id, state.name))
 
     session.close()
