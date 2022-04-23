@@ -13,7 +13,7 @@ def main():
     with request.urlopen(req) as r:
         o = r.info()
         o = dict(o)
-    print("{}".format(o['X-Request-Id']))
+    print("{}".format(o.get('X-Request-Id')))
 
 
 if __name__ == "__main__":
