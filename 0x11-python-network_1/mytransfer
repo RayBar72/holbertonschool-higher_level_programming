@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script to transfer to my sandbox
+scp -o StrictHostKeyChecking=no -i sand "$1" e3e9066c192d@e3e9066c192d.2410e53b.hbtn-cod.io:./
