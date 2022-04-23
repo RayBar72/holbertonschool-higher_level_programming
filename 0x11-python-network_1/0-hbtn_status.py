@@ -13,5 +13,5 @@ def main():
           .format(type(html), html, html.decode('utf-8')))
 
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     main()
