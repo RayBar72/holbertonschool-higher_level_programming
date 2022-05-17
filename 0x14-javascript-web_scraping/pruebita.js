@@ -7,15 +7,9 @@ const axios = require('axios').default;
 const starWars = 'https://swapi-api.hbtn.io/api/films/';
 axios.get(starWars)
   .then(function (response) {
-    const y = response.data.results[process.argv[2] - 1].characters;
-    for (const x in y) {
-      const ulriq = y[x];
-      const minAxi = require('axios').default;
-      minAxi.get(ulriq)
-        .then(function (respuesta) {
-          console.log(respuesta.data.name);
-        });
-    }
+    console.log(response.data.results.length)
+    const xs = response.data.results[process.argv[2] - 1]
+    console.log(xs)
   })
   .catch(function (error) {
     console.log(error);
