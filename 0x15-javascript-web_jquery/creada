@@ -1,0 +1,15 @@
+#!/bin/bash
+
+touch  1-pag.html
+touch  2-pag.html
+touch 3-pag.html
+touch 4-pag.html
+touch 5-pag.html
+touch 6-pag.html
+touch 7-pag.html
+touch 8-pag.html
+touch 9-pag.html
+touch 100-pag.html
+touch 101-pag.html
+touch 102-pag.html
+touch 103-pag.html
